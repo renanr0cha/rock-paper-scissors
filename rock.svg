@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg32847"
+   sodipodi:docname="rock.svg"
+   viewBox="0 0 137.26631 117.16559"
+   version="1.1"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   width="137.26631"
+   height="117.16559">
+  <defs
+     id="defs3817" />
+  <sodipodi:namedview
+     id="namedview35"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     guidetolerance="10"
+     pagecolor="#ffffff"
+     gridtolerance="10"
+     inkscape:window-maximized="1"
+     inkscape:zoom="2.5371827"
+     objecttolerance="10"
+     borderopacity="1"
+     inkscape:current-layer="svg32847"
+     inkscape:cx="41.758867"
+     inkscape:cy="71.590032"
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:window-width="1920"
+     showgrid="false"
+     inkscape:pageopacity="0"
+     inkscape:window-height="1013"
+     inkscape:snap-bbox="true" />
+  <title
+     id="title32935">Rock-Paper-Scissors</title>
+  <g
+     transform="matrix(0.19511,1.2155,1.2155,-0.19511,-1193.7785,176.52088)"
+     id="g32290">
+    <path
+       d="m 89.471,1065.9 c 3.727,6.1 -0.484,10 -6.16,12.9 -8.03,4.1 -27.898,2.1 -34.7,-2 -6.243,-3.8 -9.013,-9.3 -6.041,-14.2"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:4.06139994;stroke-linecap:round;stroke-linejoin:round"
+       id="path32292" />
+    <path
+       d="m 21.354,1021 c -0.857,15.7 13.893,40.3 31.364,46.1 9.022,2.9 29.326,3.8 36.494,-1.5 12.278,-9 18.478,-20.7 21.288,-35.1 0.99,-5.1 1.24,-10.9 0.95,-15.7 -1.0243,-19.615 -7.2183,-34.207 -20.606,-31.93 -4.0887,-16.074 -28.906,-12.222 -29.025,0.06 -12.665,-14.242 -31.088,-0.95682 -23.514,16.06 -2.806,2.21 -16.056,5.71 -16.951,22.01 z"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:4.06139994;stroke-linecap:round;stroke-linejoin:round"
+       id="path32294" />
+    <path
+       d="m 63.9,983.51 c 3.9293,12.412 2.3553,17.577 2.4826,21.002 -2.2696,-7.8785 -2.6348,-9.9348 -5.6681,-18.124 -0.5176,-1.3926 -1.1975,-2.8019 -2.7174,-4.358 l 6.1176,-0.90089 c 0.04218,-0.30077 -0.35752,1.4647 -0.21472,2.3804 z"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke-width:5.78100014"
+       id="path32296" />
+    <path
+       d="m 92.465,981.32 c 1.5115,7.49 2.5208,16.87 0.95082,23.069 -0.77062,-4.1308 -3.4725,-14.678 -4.5081,-20.921 -0.01285,0.002 0.01246,0.0116 3.5573,-2.1484 z"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke-width:5.78100014"
+       id="path32298" />
+    <path
+       d="m 79.642,1058.3 c 4.036,-9.7 3.976,-12.5 5.195,-17.4"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:4.06139994;stroke-linecap:round;stroke-linejoin:round"
+       id="path32300" />
+    <path
+       d="m 70.26,1059 c 1.693,-11.5 1.425,-17.2 1.856,-24.9"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:4.06139994;stroke-linecap:round;stroke-linejoin:round"
+       id="path32302" />
+    <path
+       d="m 59.041,1059.5 c 0.098,-8 -0.598,-11.8 -1.048,-16.8"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:4.06139994;stroke-linecap:round;stroke-linejoin:round"
+       id="path32304" />
+    <path
+       d="m 36.025,998.02 c 3.892,16.78 -1.201,23.38 -4.587,31.88 5.145,-8.8 12.14,-11.8 8.841,-31.41 z"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke-width:5.78100014"
+       id="path32306" />
+  </g>
+  <metadata
+     id="metadata33">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Rock-Paper-Scissors</dc:title>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
