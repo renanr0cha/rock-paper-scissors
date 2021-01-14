@@ -4,18 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="node_modules/confetti-js/dist/index.min.js"></script>
   <title>Rock, Paper and Scissors - You vs The Machines - SHOWDOWN!</title>
 </head>
 
 <body>
+  
   <header>
     <h1>ROCK  PAPER  SCISSORS</h1>
     <h2>Battle Royale</h2>
   </header>
 
   <div id="game-screen">
+    <canvas id="my-canvas"></canvas>
+    <div id="choose-name-div" class="show">
+      <h3 id="intro-text">Choose your name, or press the button to get a random hero name: </h3>
+      <input type="text" id="input-name" placeholder="Enter your name here">
+      <button onclick="setName()" id="set-name-button">Save Name</button>
+      <button onclick="randomName()" id="random-name-button">
+        Choose Random Name
+      </button>
+    </div>
     <h3>Choose your "weapon"</h3>
-    <div id="choices-board">
+    <div id="choices-board" >
       <div class="choice" id="rock" onclick="playerChooseRock()"> 
         <img src="rock.svg" alt="closed hand">
         <p>Rock</p>
@@ -31,6 +42,7 @@
     </div>
     <h3>SCORE</h3>
     <div id="score">
+      
       <div class="name-containers">
         <h1 id="person-name"></h1>
       </div>
@@ -55,5 +67,6 @@
 
 </body>
 <script src="script.js"></script>
+
 
 </html>
