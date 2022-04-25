@@ -14,29 +14,32 @@
     <h1>ROCK  PAPER  SCISSORS</h1>
     <h2>Battle Royale</h2>
   </header>
-
+  <audio id="battle-song">
+    <source src="./music/battlesong.mp3" type="audio/mp3">
+  </audio>
   <div id="game-screen">
     <canvas id="my-canvas"></canvas>
     <div id="choose-name-div" class="show">
       <h3 id="intro-text">Choose your name, or press the button to get a random hero name: </h3>
       <input type="text" id="input-name" placeholder="Enter your name here">
-      <button onclick="setName()" id="set-name-button">Save Name</button>
-      <button onclick="randomName()" id="random-name-button">
-        Choose Random Name
-      </button>
+      <div id="buttons">
+        <button onclick="setName()" id="set-name-button">Save Name</button>
+        <button onclick="randomName()" id="random-name-button">Choose Random Name</button>
+      </div>
+        
     </div>
     <h3>Choose your "weapon"</h3>
     <div id="choices-board" >
       <div class="choice" id="rock" onclick="playerChooseRock()"> 
-        <img src="rock.svg" alt="closed hand">
+        <img src="./images/rock.svg" alt="closed hand">
         <p>Rock</p>
       </div>
       <div class="choice" id="paper" onclick="playerChoosePaper()">
-        <img src="paper.svg" alt="open hand">
+        <img src="./images/paper.svg" alt="open hand">
         <p>Paper</p>
       </div>
       <div class="choice" id="scissors" onclick="playerChooseScissors()">
-        <img src="scissors.svg" alt="hand showing 2 fingers">
+        <img src="./images/scissors.svg" alt="hand showing 2 fingers">
         <p>Scissors</p>
       </div>
     </div>

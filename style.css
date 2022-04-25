@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: arial,sans-serif;
+  font-family: 'Poppins',sans-serif;
   color: rgba(0,0,0,0.87);
   background-color: #FFFFFF;
   font-family: 'Poppins', sans-serif;
@@ -26,16 +26,14 @@
   position:absolute;
   top: 0;
   left: 0;
-  z-index: -10;
+  z-index: -1;
 }
 input {
   margin: 5px 0px;
-  padding: 2px 10px;
-  width: 250px;
+  padding: 6px 20px;
+  min-width: 30vw;
   border: 2px solid #363636;
-  border-right: 1px solid #363636;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 10px;
   transition: all .2s ease-in-out;
   outline: none;
 }
@@ -44,35 +42,25 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  min-width: 30vw;
 }
 
 #choose-name-div button:hover {
-  transform: scale(0.9);
-  border-left: 2px solid #363636;
-  border-right: 2px solid #363636;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
-#random-name-button {
+#random-name-button, #set-name-button {
   margin: 5px 0px;
-  padding: 2px 2px;
-  border-top: 2px solid #363636;
-  border-bottom: 2px solid #363636;
-  border-left: 1px solid #363636;
-  border-right: 2px solid #363636;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  outline: none;
-  transition: all .2s ease-in-out;
-}
-
-#set-name-button {
-  border-radius: none;
-  margin: 5px 0px;
-  padding: 2px 2px;
-  border-top: 2px solid #363636;
-  border-bottom: 2px solid #363636;
-  border-left: 1px solid #363636;
-  border-right: 1px solid #363636;
+  padding: 6px 20px;
+  border: 2px solid #363636;
+  border-radius: 20px;
   outline: none;
   transition: all .2s ease-in-out;
 }
@@ -100,6 +88,7 @@ header {
 h3 {
   margin: 20px;
   text-align: center;
+  max-width: 60vw;
 }
 
 .choice {
@@ -114,6 +103,7 @@ h3 {
   border: 2px solid #363636;
   box-shadow: 0 0 5px rgba(33,33,33,.4);
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .choice:active {

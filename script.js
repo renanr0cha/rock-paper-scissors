@@ -20,17 +20,17 @@ let personName = document.getElementById("person-name");
 let attributeChoice = document.getElementsByClassName("choice");
 let hideNameInput = document.getElementById("choose-name-div");
 let nameInput = document.getElementById("input-name");
-let randomNameButton = document.getElementById("random-name-button");
-let setNameButton = document.getElementById("set-name-button");
+let buttons = document.getElementById("buttons");
 let intro = document.getElementById("intro-text");
+let audio = document.getElementById("battle-song");
 
 function randomName () {
   let random = Math.floor(Math.random() * playerExampleNames.length);
   playerName = playerExampleNames[random].toUpperCase();
   personName.innerHTML = playerName;
   hideNameInput.removeChild(nameInput);
-  hideNameInput.removeChild(randomNameButton);
-  hideNameInput.removeChild(setNameButton);
+  hideNameInput.removeChild(buttons);
+  playSound();
   introText();
 }
 
@@ -44,14 +44,19 @@ function setName () {
   playerName = nameInput.value.toUpperCase();
   personName.innerHTML = playerName;
   hideNameInput.removeChild(nameInput);
-  hideNameInput.removeChild(randomNameButton);
-  hideNameInput.removeChild(setNameButton);
+  hideNameInput.removeChild(buttons);
+  playSound();
   introText();
+}
+
+function playSound() {
+  audio.play();
 }
 
 
 function introText () {
   intro.innerHTML = `Hello ${playerName}, the world is on the verge of collapsing to the Machines, that dominated everything. You are our last hope!`
+  
 }
 
 
