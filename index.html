@@ -18,27 +18,26 @@
     <source src="./music/battlesong.mp3" type="audio/mp3">
   </audio>
   <div id="game-screen">
-    <canvas id="my-canvas"></canvas>
-    <div id="choose-name-div" class="show">
+    <div id="choose-name-div">
       <h3 id="intro-text">Choose your name, or press the button to get a random hero name: </h3>
-      <input type="text" id="input-name" placeholder="Enter your name here">
-      <div id="buttons">
-        <button onclick="setName()" id="set-name-button">Save Name</button>
-        <button onclick="randomName()" id="random-name-button">Choose Random Name</button>
-      </div>
-        
+        <input type="text" id="input-name" placeholder="Enter your name here">
+        <div id="buttons">
+          <button onclick="setName()" id="set-name-button">Save Name</button>
+          <button onclick="randomName()" id="random-name-button">Choose Random Name</button>
+        </div>
+        <button onclick="beginMatch()" class="hide" id="start-match">Let's Fight!</button>
     </div>
-    <h3>Choose your "weapon"</h3>
-    <div id="choices-board" >
-      <div class="choice" id="rock" onclick="playerChooseRock()"> 
+    <h3 id="choose-weapon" class="hide">Choose your "weapon"</h3>
+    <div id="choices-board">
+      <div class="choice hide" id="rock" onclick="playerPlay(rock)">
         <img src="./images/rock.svg" alt="closed hand">
         <p>Rock</p>
       </div>
-      <div class="choice" id="paper" onclick="playerChoosePaper()">
+      <div class="choice hide" id="paper" onclick="playerPlay(paper)">
         <img src="./images/paper.svg" alt="open hand">
         <p>Paper</p>
       </div>
-      <div class="choice" id="scissors" onclick="playerChooseScissors()">
+      <div class="choice hide" id="scissors" onclick="playerPlay(scissors)">
         <img src="./images/scissors.svg" alt="hand showing 2 fingers">
         <p>Scissors</p>
       </div>
@@ -61,10 +60,6 @@
       <div class="name-containers">
         <h1 id="computer-name">THE MACHINES</h1>
       </div>
-    </div>
-    <div id="message-after-round">
-      <h3 id="message"></h3>
-      <!-- Adicionar botão para começar de novo pelo HTML-->
     </div>
   </div>
 
