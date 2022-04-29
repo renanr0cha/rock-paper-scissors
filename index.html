@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="node_modules/confetti-js/dist/index.min.js"></script>
   <title>Rock, Paper and Scissors - You vs The Machines - SHOWDOWN!</title>
 </head>
 
@@ -26,6 +25,8 @@
           <button onclick="randomName()" id="random-name-button">Choose Random Name</button>
         </div>
         <button onclick="beginMatch()" class="hide" id="start-match">Let's Fight!</button>
+        <button onclick="restartMatch()" class="hide" id="restart-match">Give it another go!</button>
+
     </div>
     <h3 id="choose-weapon" class="hide">Choose your "weapon"</h3>
     <div id="choices-board">

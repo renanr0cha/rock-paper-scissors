@@ -1,10 +1,10 @@
-//adicionar campo para definir nome
-
 let computerSelection = "";
 let playerSelection = "";
 let computerScore = 0;
 let playerScore = 0;
 let playerExampleNames = ['Gandalf', 'Harry Potter', 'Neo', 'John Connor', 'Luke Skywalker', 'Naruto', 'Ragnar Lothbrok', 'Jon Snow', 'Jack Bauer'];
+
+
 
 let computerScoreboard = document.querySelector('#computer-score-number');
 let playerScoreboard = document.querySelector('#person-score-number');
@@ -18,10 +18,25 @@ let buttons = document.querySelector("#buttons");
 let intro = document.querySelector("#intro-text");
 let audio = document.querySelector("#battle-song");
 let startButton = document.querySelector("#start-match")
+let restartButton = document.querySelector("#restart-match")
 let rockButton = document.querySelector("#rock")
 let paperButton = document.querySelector("#paper")
 let scissorsButton = document.querySelector("#scissors")
+let headingWeapon = document.querySelector("#choose-weapon")
 
+function restartMatch() {
+  computerSelection = "";
+  playerSelection = "";
+  computerScore = 0;
+  playerScore = 0;
+  computerScoreboard.textContent = computerScore
+  playerScoreboard.textContent = playerScore
+  intro.textContent = "Choose your name, or press the button to get a random hero name:"
+  nameInput.classList.remove("hide")
+  buttons.children[0].classList.remove("hide")
+  buttons.children[1].classList.remove("hide")
+  restartButton.classList.add("hide")
+}
 
 function randomName () {
   let random = Math.floor(Math.random() * playerExampleNames.length);
@@ -30,10 +45,13 @@ function randomName () {
 }
 
 function beginMatch() {
+  nameInput.classList.add("hide")
+  buttons.children[0].classList.add("hide")
+  buttons.children[1].classList.add("hide")
+  headingWeapon.classList.remove("hide")
   rockButton.classList.remove("hide")
   paperButton.classList.remove("hide")
   scissorsButton.classList.remove("hide")
-  document.querySelector("#choose-weapon").classList.remove("hide")
   startButton.classList.add("hide")
   intro.textContent = ""
 
@@ -50,7 +68,7 @@ function setName () {
 }
 
 function playSound() {
-  audio.play();
+  //audio.play();
 }
 
 
@@ -63,7 +81,7 @@ function introText () {
   playSound();
   intro.textContent = 
   `Hello ${personName.textContent}, the world is on the verge of collapsing to the Machines.
-  They dominated everything. 
+  They've dominated everything. 
   You are our last hope!`
 }
 
@@ -93,14 +111,14 @@ function playerPlay(choice) {
 function lose() {
   computerScore++;
   computerScoreboard.textContent = computerScore;
-  intro.textContent = "Oh no, you lose the round! The Machines are closer to wipe us from the face of the Earth!"
+  intro.textContent = "Oh no, you lost the round! The Machines are closer to wipe us from the face of the Earth!"
   
 }
 
 function win() {
   playerScore++;
   playerScoreboard.textContent = playerScore;
-  intro.textContent = "Yes baby, you win the round! We are closer to send them to the junkyard! Keep up!"
+  intro.textContent = "Alright, you win the round! We are closer to send them to the junkyard! Keep up!"
 }
 function playRound(playerSelection, computerSelection) {
   if (playerSelection == "rock") {
@@ -132,17 +150,22 @@ function playRound(playerSelection, computerSelection) {
 
 function isOver() {
   if (playerScore >= 5 || computerScore >= 5) {
-    rockButton.removeAttribute('onclick');
-    paperButton.removeAttribute('onclick');
-    scissorsButton.removeAttribute('onclick');
+    rockButton.classList.add("hide")
+    paperButton.classList.add("hide")
+    scissorsButton.classList.add("hide")
+    headingWeapon.classList.add("hide")
     if (playerScore > computerScore) {
       intro.textContent = "WE WON! Congratulations, now we have to repopulate the Earth as fast as possible, humanity triumphs!";
     } else {
       intro.textContent = "WE LOST! Too bad, you are really bad at this game, now we are extinct because of your incompetence!";
     }
+
+    restartButton.classList.remove("hide")
+
   } else {
 
     computerSelection = "";
     playerSelection = "";
+    
   }
 }
